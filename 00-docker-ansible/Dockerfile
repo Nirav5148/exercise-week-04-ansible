@@ -1,5 +1,7 @@
 FROM centos:7
 
+ENV LANG en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
 
 RUN yum check-update; \
     yum install -y gcc libffi-devel python3 epel-release; \
@@ -22,9 +24,9 @@ RUN pip3 install --upgrade pip; \
     ansible-galaxy collection install cisco.iosxr; \
     ansible-galaxy collection install juniper.device; \
     ansible-galaxy collection install f5networks.f5_modules; \
-    git config --global user.name "yourusename"; \
-    git config --global user.email "youremail"; \ 
-    git clone https://github.com/<yourusename>/exercise-week-04-ansible.git /work/;
+    git config --global user.name "Nirav5148"; \
+    git config --global user.email "chaunira@sheridancollege.ca"; \ 
+    git clone https://github.com/Nirav5148/exercise-week-04-ansible.git /work/;
 
 WORKDIR /work
 

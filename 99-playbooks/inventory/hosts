@@ -6,8 +6,8 @@ ansible_password=admin
 cisco
 
 [cisco]
-rtr1 private_ip=172.16.129.86
-rtr2 private_ip=172.16.129.86
+rtr1 private_ip=10.0.0.109
+rtr2 private_ip=10.0.0.110
 
 [cisco:vars]
 ansible_user=admin
